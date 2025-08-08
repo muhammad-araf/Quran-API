@@ -1,0 +1,60 @@
+.side-header {
+  background-color: #1f1f1f;
+  color: #392a84;
+  font-size: medium;
+  width: 250px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+
+.side-header h2 {
+    align-items: center;
+    justify-content: center;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  background-color: #2d2d2d;
+  border-radius: 10px;
+  border-bottom: 1px solid #333;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 15px;
+  color: white;
+  cursor: pointer;
+}
+.side-header h2.current {
+  color: #6344ff;
+  font-weight: bold;
+}
+
+.menu-section h3 {
+  font-size: 1.2em;
+  margin: 15px 0 10px;
+  color: #ccc;
+}
+
+.menu-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-section li {
+    color: white;
+    margin-top: 6px;
+    background-color: #31256c;
+    border-radius: 10px;
+  padding: 8px 7px;
+  cursor: pointer;
+}
+
+.menu-section li:hover {
+    background-color: #614ec0;
+}
+
+.menu-section .highlight {
+  color: #ff69b4; /* Pink color for the rocket emoji section */
+}
+.menu-section li.current{
+    background-color: #6344ff;
+    color: white;
+}

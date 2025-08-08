@@ -18,7 +18,7 @@ export default function Get() {
     setTimeout(() => setCopied(false), 2000);
   };
   return (
-    <div className="font-sans grid grid-rows-[1px_1fr_1px] items-center justify-items-center min-h-screen p-1 pb-5 gap-1 sm:p-20">
+    <div className="font-sans grid grid-rows-[1px_1fr_1px] items-center justify-items-center min-h-screen p-1 pb-5 gap-1 sm:p-20 w-[60%]">
       <main className="flex flex-col gap-[14px] row-start-2 items-center sm:items-start">
         <h1 className="text-4xl font-bold text-center sm:text-left">
           Quran API For Developers
@@ -52,8 +52,8 @@ export default function Get() {
 
           <pre className="rounded-lg border border-white/10 bg-[#1e1e2e] p-4 text-sm font-mono overflow-x-auto">
             <code>
-              <span className="text-purple-400">const</span> <span className="text-blue-400">getData</span> = <span className="text-purple-400">async</span> (<span className="text-green-400">chapter: string</span>) =&gt; {"{"}
-              {"\n  "}<span className="text-purple-400">const</span> response = <span className="text-purple-400">await</span> fetch(<span className="text-yellow-300">{'`'}${'{process.env.NEXT_PUBLIC_URL}'}/api/v1/[chapter]{'`'}</span>);
+              <span className="text-purple-400">const</span> <span className="text-blue-400">getData</span> = <span className="text-purple-400">async</span> (<span className="text-green-400">verse: string</span>) =&gt; {"{"}
+              {"\n  "}<span className="text-purple-400">const</span> response = <span className="text-purple-400">await</span> fetch(<span className="text-yellow-300">{'`'}${'https://quran-restapi.vercel.app'}/api/v1/[verse]{'`'}</span>);
               {"\n  "}<span className="text-purple-400">const</span> data = <span className="text-purple-400">await</span> response.json();
               {"\n"}{"}"}
             </code>
@@ -62,36 +62,6 @@ export default function Get() {
 
 
 
-<table className="w-full overflow-x-auto border border-gray-300 dark:border-gray-600 mt-6 rounded-lg shadow-sm">
-  <thead>
-    <tr className="bg-gray-100 dark:bg-gray-700/50">
-      <th className="border border-gray-300 dark:border-gray-600 px-4 py-2 text-left font-semibold">Reciter ID</th>
-      <th className="border border-gray-300 dark:border-gray-600 px-4 py-2 text-left font-semibold">Name</th>
-    </tr>
-  </thead>
-    <tbody>
-      <tr className="even:bg-gray-100 even:dark:bg-gray-600/20">
-        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">1</td>
-        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">Mishary Rashid Al Afasy</td>
-      </tr>
-      <tr className="even:bg-gray-100 even:dark:bg-gray-600/20">
-        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">2</td>
-        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">Abu Bakr Al Shatri</td>
-      </tr>
-      <tr className="even:bg-gray-100 even:dark:bg-gray-600/20">
-        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">3</td>
-        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">Nasser Al Qatami</td>
-      </tr>
-      <tr className="even:bg-gray-100 even:dark:bg-gray-600/20">
-        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">4</td>
-        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">Yasser Al Dosari</td>
-      </tr>
-      <tr className="even:bg-gray-100 even:dark:bg-gray-600/20">
-        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">5</td>
-        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">Hani Ar Rifai</td>
-      </tr>
-    </tbody>
-  </table>
 
       </main>
     </div>  
