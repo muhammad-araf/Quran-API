@@ -20,7 +20,17 @@
 }
 
 body {
-  background: var(--background);
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url('/image.png') no-repeat center center fixed;
+  background-size: cover;
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.code{
+  font-family: var(--font-mono);
+  background-color: #313131;
+  padding: 1rem;
+  border-radius: 1rem;
 }
